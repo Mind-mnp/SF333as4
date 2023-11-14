@@ -11,7 +11,7 @@ import SwiftUI
 struct Slide_PuzzleApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(viewModel: GameModel())
         }
     }
 }

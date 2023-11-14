@@ -14,6 +14,7 @@
 		2106AB4C2AF20ED400FBCFA0 /* Slide_PuzzleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2106AB4B2AF20ED400FBCFA0 /* Slide_PuzzleTests.swift */; };
 		2106AB562AF20ED400FBCFA0 /* Slide_PuzzleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2106AB552AF20ED400FBCFA0 /* Slide_PuzzleUITests.swift */; };
 		2106AB582AF20ED400FBCFA0 /* Slide_PuzzleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2106AB572AF20ED400FBCFA0 /* Slide_PuzzleUITestsLaunchTests.swift */; };
+		2109B9AC2AF77C0F00C9F715 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2109B9AB2AF77C0F00C9F715 /* GameModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		2106AB512AF20ED400FBCFA0 /* Slide PuzzleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Slide PuzzleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2106AB552AF20ED400FBCFA0 /* Slide_PuzzleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide_PuzzleUITests.swift; sourceTree = "<group>"; };
 		2106AB572AF20ED400FBCFA0 /* Slide_PuzzleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide_PuzzleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2109B9AB2AF77C0F00C9F715 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GameModel.swift; path = "Slide Puzzle/GameModel.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		2106AB2E2AF20ED200FBCFA0 = {
 			isa = PBXGroup;
 			children = (
+				2109B9AB2AF77C0F00C9F715 /* GameModel.swift */,
 				2106AB392AF20ED200FBCFA0 /* Slide Puzzle */,
 				2106AB4A2AF20ED400FBCFA0 /* Slide PuzzleTests */,
 				2106AB542AF20ED400FBCFA0 /* Slide PuzzleUITests */,
@@ -259,6 +262,7 @@
 			files = (
 				2106AB3D2AF20ED200FBCFA0 /* ContentView.swift in Sources */,
 				2106AB3B2AF20ED200FBCFA0 /* Slide_PuzzleApp.swift in Sources */,
+				2109B9AC2AF77C0F00C9F715 /* GameModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
