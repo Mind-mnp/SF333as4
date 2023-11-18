@@ -8,12 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
-    var viewModel: GameModel
-    @State private var numbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15",""].shuffled()
+    var gameModel: GameModel
+    @State private var numbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "","15"]
+    @State private var numbersWin = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15",""]
     
     
     @State var cardCount = 15
     @State var count = 0
+    @State var winned = false
+    
     
     
     var body: some View {
@@ -35,10 +38,13 @@ struct ContentView: View {
                             .frame(maxWidth: .infinity, maxHeight: sizeBox)
                             .foregroundColor(primary_color)
                             .onTapGesture {
-                                self.moveNumber(indexNumber: row * 4 + column)
-                                //self.checkWin() // ตรวจสอบการชนะหลังจากทุกการเคลื่อนไหว
-                                //print(numbers, row * 4 + column)
+                                if(!winned){
+                                    self.moveNumber(indexNumber: row * 4 + column)
+                                    self.winned = checkWiner()
+                                }
+                                
                             }
+                            .animation(.default, value :numbers)
                     }
                 }
             }.padding(3)
@@ -47,14 +53,14 @@ struct ContentView: View {
         
         //result
         Spacer()
-        Winer(win: true)
+        Winer(win: winned)
         //Move
         Spacer()
         Counter(Count: count)
         Spacer()
         Button("New Game")  {
             print("restart")
-            viewModel.restart()
+            gameModel.restart()
             self.newGame()
         }
         .font(.system(size: 30))
@@ -95,7 +101,13 @@ struct ContentView: View {
     func newGame()  {
         count = 0
         numbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15",""].shuffled()
+        winned.toggle()
     }
+    
+    func checkWiner() -> Bool {
+        return numbers.elementsEqual(numbersWin)
+    }
+    
     
     
     
@@ -137,6 +149,9 @@ struct Winer: View {
     }
 }
 
+
+
+
 struct Counter: View {
     var Count: Int
     var body: some View {
@@ -149,6 +164,8 @@ struct Counter: View {
 
 
 
+
+
 #Preview {
-    ContentView(viewModel: GameModel())
+    ContentView(gameModel: GameModel())
 }
