@@ -7,7 +7,7 @@ class GameModel: ObservableObject {
     @Published var moveCount = 0
     
     static func createModel() -> [String] {
-        var model = numbers
+        //var model = numbers
         return numbers.shuffled()
     }
     
