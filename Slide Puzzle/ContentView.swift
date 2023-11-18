@@ -61,6 +61,7 @@ struct ContentView: View {
             Spacer()
             
             Button("New Game")  {
+                winned = false
                 gameModel.restart()
             }
             .font(.system(size: 30))
