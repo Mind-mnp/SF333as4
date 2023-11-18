@@ -1,10 +1,8 @@
 # SF333as4
 
-6410742362 ณิชาภา ภรภัทร์ธนะดุล
+1.6410742362 ณิชาภา ภรภัทร์ธนะดุล
 
-6410742040 ชิษณุพงศ์ เพ็งชัย
+2.6410742040 ชิษณุพงศ์ เพ็งชัย
 
-https://drive.google.com/file/d/1sWqnSUqeq5G-fM5Tce8SRfGhGUmAhPxl/view?usp=sharing
-
-https://github.com/Mind-mnp/SF333as4/assets/99460016/9bdd3f00-9bd2-4235-9a73-996489349919
+3.https://drive.google.com/file/d/1uB1Nd9Pq_hl0Qg2fGow0jX6sAyEgA2Bp/view?usp=sharing
 
